@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://mobilegamegraphics.com/wp-content/uploads/2015/06/Untitled-2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.app__title {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+.app_score {
+  font-family: "Press Start 2P", cursive;
+  color: red;
+  margin: 10px;
+}
+.app__inputInstruction {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  color: red;
+}
+
+.app__input {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.app__numberStatus {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.app__inputNumber {
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  margin-left: 50px;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app__inputSubmit {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.app__history {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  word-wrap: break-word;
+}
+
+.app__footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.app__restartButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.app__restartButton {
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  font-family: "Press Start 2P", cursive;
+  padding: 20px;
+  transition: 500ms ease-in-out;
+}
+.app__restartButton:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .app__title {
+    font-size: 25px;
+  }
+  .app_score {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .app__title {
+    font-size: 15px;
+  }
+  .app_score {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .app__title {
+    font-size: 15px;
+    padding: 20px;
+  }
+  .app_score {
+    font-size: 10px;
+  }
+}
