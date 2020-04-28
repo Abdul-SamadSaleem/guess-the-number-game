@@ -18,10 +18,12 @@ function App() {
 
     if (input > randomNumber) {
       setOutput("too big");
+      setInput(0);
     }
 
     if (input < randomNumber) {
       setOutput("too small");
+      setInput(0);
     }
 
     if (Number(input) === randomNumber) {
