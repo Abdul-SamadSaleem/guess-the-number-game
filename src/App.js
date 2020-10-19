@@ -43,18 +43,6 @@ function App() {
     setGuesses([]);
   };
 
-  /**
-   *
-   * HOW do we add guess history to the game
-   * Make state for the users input
-   * Use e.target.value
-   * Output it
-   *
-   * guesses [] in state
-   * buttonSubmit function needs to push into the guesses array
-   * map guesses array and return it
-   */
-
   return (
     <div className="app">
       <h1 className="app__title">Guess the number game</h1>
